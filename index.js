@@ -1,27 +1,30 @@
 let nickname = "Razzoriel"
-let experience = 7001 
+let experience = 7001
+let nivel = ""
 
 if (experience >= 1001 && experience <= 2000){
-    console.log("O heroi " +nickname+ " está no nivel bronze");
+    nivel = "bronze"
 }
 else if (experience >= 2001 && experience <= 5000){
-    console.log("O heroi " +nickname+ " está no nivel prata"); 
+    nivel = "prata"
 }
 else if (experience >= 5001 && experience <= 7000){
-    console.log("O heroi " +nickname+ " está no nivel ouro"); 
+    nivel = "ouro" 
 }
 else if (experience >= 7001 && experience <= 8000){
-    console.log("O heroi " +nickname+ " está no nivel platina"); 
+    nivel = "platina" 
 }
 else if (experience >= 8001 && experience <= 9000){
-    console.log("O heroi " +nickname+ " está no nivel ascendente"); 
+    nivel = "ascendente" 
 }
 else if (experience >= 9001 && experience <= 10000){
-    console.log("O heroi " +nickname+ " está no nivel imortal"); 
+    nivel = "imortal" 
 }
 else if (experience >= 10001){
-    console.log("O heroi " +nickname+ " está no nivel radiante"); 
+    nivel = "radiante"
 }
 else{
-    console.log("O heroi " +nickname+ " está no nivel ferro"); 
+    nivel = "ferro"
 }
+
+console.log("O heroi " +nickname+ " está no nivel " + nivel)
